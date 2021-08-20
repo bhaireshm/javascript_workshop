@@ -21,6 +21,8 @@ async function fetchHarryPotterCharacters(data) {
     url = `${api_url}/${url}`;
     console.info("URL:", url);
 
+    // url = url; // debug error here
+
     let response = await fetch(url);
     if (response.ok) {
       let json = await response.json(); // debug error here
