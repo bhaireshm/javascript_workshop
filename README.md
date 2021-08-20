@@ -33,3 +33,17 @@
 - Online convert (anything)
 - CORS
 - AdBlock
+- 
+
+### List of usefull Websites / Links
+
+- My codes : https://gist.github.com/bhaireshm
+- Cheetsheet : https://devhints.io/
+- Emmets : https://devhints.io/emmet
+- Browser : https://caniuse.com/
+- Key codes : https://keycode.info/
+- Color codes : https://cssgradient.io/
+- Crazy codes : https://www.30secondsofcode.org/
+- Github labels : https://shields.io/
+- Converter : https://www.online-convert.com/
+- Markdown : https://stackedit.io
