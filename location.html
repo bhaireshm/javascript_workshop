@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+  </head>
+  <body>
+    <br />
+    <div id="place"></div>
+    <br />
+    <div id="ip"></div>
+  </body>
+  <script type="application/javascript">
+    function getIP(json) {
+      document.querySelector("#ip").textContent = "IP: " + json.ip;
+      getLocation();
+    }
+
+    function getLocation() {
+      navigator.geolocation.getCurrentPosition((position) => {
+        document.getElementById("place").innerHTML =
+          "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+      });
+    }
+  </script>
+
+  <script
+    type="application/javascript"
+    src="https://api.ipify.org?format=jsonp&callback=getIP"
+  ></script>
+</html>
